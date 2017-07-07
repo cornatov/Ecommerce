@@ -1,0 +1,593 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 6, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.product-description,
+.reviews {
+  padding-left: 0;
+}
+
+@media (max-width: 991px) {
+  /* line 12, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+  .product-description {
+    padding-top: 20px;
+  }
+}
+/* line 17, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.admin-navigation {
+  margin-top: 20px;
+}
+
+/* line 21, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.rated img {
+  padding: 0 0 10px 0;
+}
+
+/* line 26, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.product-specs {
+  padding-right: 0 80%;
+}
+
+/* line 30, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.product-container {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+/* line 35, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.product-container img {
+  padding: 20px 0;
+  max-width: 100%;
+}
+
+/* line 44, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.productdisplay {
+  width: 17%;
+}
+
+/* line 50, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.product-table, .product-show {
+  width: 90%;
+}
+
+/* line 54, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.add-review {
+  background-color: #BAB9B0;
+  padding: 2em;
+  margin: 2em 0;
+  border: 1px solid black;
+}
+
+/* line 61, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.add-review h4 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+/* line 66, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.submit {
+  float: right;
+}
+
+/* line 70, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.subarea {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+/* line 79, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.create {
+  text-align: right;
+}
+
+/* line 83, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.links {
+  text-align: center;
+}
+
+/*////////////////Cards///////////////////*/
+/* line 94, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.row {
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* line 101, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+#products .card {
+  width: 300px;
+  height: 450px;
+  background-color: black;
+  border: 1px solid #e4e4e4;
+  position: relative;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+/* line 111, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+#products .card:hover {
+  border: 8px solid black;
+  -webkit-box-shadow: 0px 10px 40px 3px #e0e0e0;
+  -moz-box-shadow: 0px 10px 40px 3px #e0e0e0;
+  box-shadow: 0px 10px 40px 3px #e0e0e0;
+  transition: .25s ease;
+}
+
+/* line 119, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.card-img-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  overflow: hidden;
+  height: 70%;
+  width: 100%;
+}
+
+/* line 129, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.wrap {
+  overflow: hidden;
+}
+
+/* line 134, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.card-block {
+  position: absolute;
+  top: 300px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  z-index: 1;
+  background-color: black;
+  width: 298px;
+  text-color: black;
+}
+
+/* line 147, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.card-title {
+  margin-left: 5%;
+  word-wrap: break-word;
+  text-color: black;
+}
+
+/* line 153, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.card-text {
+  max-width: 258px;
+  text-align: center;
+  font-weight: 400;
+  font-family: "proxima-nova", sans-serif;
+  font-size: .85vw;
+  margin: 10px 0px;
+  text-color: black;
+}
+
+/* line 163, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.card-footer {
+  max-width: 258px;
+  text-align: center;
+  font-weight: 400;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 15px;
+  padding-left: 10%;
+  text-color: black;
+}
+
+/* line 176, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+#CardTitle_Share {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  text-color: black;
+}
+
+/* line 183, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+#products.container {
+  display: flex;
+  margin: 0 auto;
+  top: 119px;
+  padding-bottom: 70px;
+  text-color: black;
+}
+
+/* line 191, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.card-text {
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 20;
+  text-color: black;
+  z-index: 1;
+}
+
+/* line 199, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.fade-anchor {
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 0px, #ffffff 30px);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 0px, #ffffff 30px);
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  position: absolute;
+  top: 110px;
+  right: 0;
+  left: 0;
+  text-align: center;
+  -webkit-transition: background 150ms ease-in;
+  transition: background 150ms ease-in;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1550px) {
+  /* line 218, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+  #stories.container, #categories.container, #mystories.container, .cat {
+    width: 990px;
+  }
+}
+@media screen and (max-width: 1016px) {
+  /* line 224, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+  #stories.container, #categories.container, #mystories.container, .cat {
+    width: 660px;
+  }
+}
+@media screen and (max-width: 686px) {
+  /* line 230, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+  #stories.container, #categories.container, #mystories.container, .cat {
+    width: 330px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  /* line 238, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+  #products.container {
+    width: 990px;
+  }
+}
+@media screen and (max-width: 1016px) {
+  /* line 244, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+  #products.container {
+    width: 660px;
+  }
+}
+@media screen and (max-width: 686px) {
+  /* line 251, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+  #products.container {
+    width: 330px;
+  }
+}
+@media (max-width: 991px) {
+  /* line 257, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+  .product-specs {
+    padding: 0;
+  }
+
+  /* line 260, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+  .cart-button {
+    margin-bottom: 20px;
+  }
+}
+/* line 1, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 11, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.submit-button {
+  position: absolute;
+}
+
+/* line 15, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.carousel-inner {
+  background-color: #000;
+}
+
+/* line 19, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  font-family: 'Shrikhand', cursive;
+  color: gold;
+  font-size: 4em;
+  line-height: 60px;
+  letter-spacing: -2px;
+  font-kerning: normal !important;
+  text-rendering: optimizeLegibility;
+  text-align: left;
+  text-transform: uppercase;
+  left: 50%;
+  top: 5%;
+  text-shadow: none;
+  display: inline;
+}
+
+/* line 36, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.carousel-control {
+  background-image: none !important;
+  text-shadow: none;
+  color: #c0362c !important;
+  opacity: 100;
+  width: 7%;
+}
+
+/* line 44, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.carousel-control:hover, .carousel-control:focus {
+  background-color: transparent;
+  color: #fff;
+  opacity: 100;
+}
+
+/* line 50, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.carousel-inner > .item > img {
+  width: 50%;
+  position: relative;
+}
+
+/* line 55, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators {
+  bottom: -60px;
+}
+
+/* line 59, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators > li {
+  border: 0;
+  border-radius: 0;
+  background-color: #999;
+  width: 12px;
+  height: 12px;
+  margin: 0;
+}
+
+/* line 68, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators > .active {
+  background-color: #000;
+}
+
+/* line 78, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+h1, h2, .navbar-brand, ul {
+  text-align: center;
+  color: gold;
+  font-family: 'Shrikhand', cursive;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 86, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+div.c-wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+/* line 91, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+p {
+  color: gray;
+}
+
+/* line 95, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 100, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+body {
+  overflow-x: hidden;
+  margin-bottom: 150px;
+  padding-top: 2%;
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+  background-color: #D2691E;
+  text-align: center;
+}
+
+/* line 110, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+
+/* line 118, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.container {
+  margin-top: 50px;
+  color: #fff;
+  width: 100%;
+}
+
+/* line 124, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.fa-twitter {
+  color: #4099FF;
+}
+
+/* line 128, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.fa-facebook {
+  color: #3B5998;
+}
+
+/* line 132, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.fa-youtube-play {
+  color: #e52d27;
+}
+
+/* line 136, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.fa-rss {
+  color: #FF6600;
+}
+
+/* line 140, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.fa-vine {
+  color: #00a478;
+}
+
+/* line 144, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.fa-flickr {
+  color: #ff0084;
+}
+
+/* line 148, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.fa-twitch {
+  color: #6441A5;
+}
+
+/* line 152, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.fa-linkedin {
+  color: #007bb6;
+}
+
+/* line 156, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.fa {
+  opacity: 0.7;
+  transition: 1s;
+  -webkit-transition: 1s;
+}
+
+/* line 162, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.fa:hover {
+  opacity: 1;
+  transition: 1s;
+  -webkit-transition: 1s;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
