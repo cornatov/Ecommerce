@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -23,16 +24,13 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href ="#">Cornato Vella</a>
+      <a class="navbar-brand" href ="static_pages/landing_page"><i class="fa fa-bicycle" aria-hidden="true" style="font-size:30px;color:gold;"></i></a>
     </div>
     <ul class="nav navbar-nav">
-      <li><%= link_to "Home", static_pages_index_path%></li>
-      <li><%= link_to "About", static_pages_about_path%></li>
-      <li><%= link_to "Contact", static_pages_contact_path%></li>
-      <li><%= link_to "Products", "/products" %></li>
+ 
+      
     </ul>
-   <ul class="nav pull-right">
-  <li>
+
     
     
   <div class="navbar-form navbar-right">
@@ -49,7 +47,7 @@
 
         
         
-<%= form_tag("/products", method: "get", class:"navbar-form navbar-left") do %> 
+<%= form_tag("/products", method: "get", class:"navbar-form navbar-right") do %> 
   <div class="form-group">
     <%= label_tag(:q, "Search for:", class:"hidden") %>
     <%= text_field_tag(:q, "", type:"text", class:"form-control", placeholder:"Search") %>
@@ -73,22 +71,18 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
     <%= javascript_include_tag 'jquery.raty.js', "data-turbolinks-track" => false %>
-
-    <div class="footer">
-      <div class="container">
-              <a href='#'><i class="fa fa-twitch fa-3x fa-fw"></i></a>
-              <a href='#'><i class="fa fa-facebook fa-3x fa-fw"></i></a>
-              <a href='#'><i class="fa fa-twitter fa-3x fa-fw"></i></a>
-              <a href='#'><i class="fa fa-youtube-play fa-3x fa-fw"></i></a>
-              <a href='#'><i class="fa fa-rss fa-3x fa-fw"></i></a>
-              <a href='#'><i class="fa fa-vine fa-3x fa-fw"></i></a>
-              <a href='#'><i class="fa fa-flickr fa-3x fa-fw"></i></a>
-              <a href='#'><i class="fa fa-linkedin fa-3x fa-fw"></i></a>
-            </span>
-      </div>
-     <strong>&copy; 2017 Cornato Vella</strong> 
-    </div>
+ </div>
+  
 
 
   </body>
+  
+  <footer>
+    
+      <div class="footer">
+ 
+     
+     <strong>&copy; 2017 Cornato Vella</strong> 
+    </div>
+  </footer>
 </html>

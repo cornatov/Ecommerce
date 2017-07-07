@@ -8,14 +8,18 @@ $primary-color: #333;
 
 /////carousel page/////////////////////////
 
+.submit-button {
+    position: absolute;
+}
+
 .carousel-inner {
 	background-color: #000;
 }
 
 .carousel-caption {
 	font-family: 'Shrikhand', cursive;
-	color: #c0362c;
-	font-size: 70px;
+	color: gold;
+	font-size: 4em;
 	line-height: 60px;
 	letter-spacing: -2px;
 	font-kerning: normal !important;
@@ -45,6 +49,7 @@ $primary-color: #333;
 
 .carousel-inner > .item > img {
 	width: 50%;
+	position: relative;
 }
 
 .carousel-indicators {
@@ -67,13 +72,12 @@ $primary-color: #333;
 
 
 
-
 /////carousel page/////////////////////////
 
 
 h1, h2, .navbar-brand, ul {
     text-align: center;
-    color:#c0362c;
+    color:gold;
     font-family: 'Shrikhand', cursive;
     justify-content: center;
     align-items: center;
@@ -96,10 +100,10 @@ html {
 body {
   overflow-x: hidden;
   margin-bottom: 150px;
-  padding-top: 15%;
+  padding-top: 2%;
   font: 100% $font-stack;
   color: $primary-color;
-  background-color: #ffff66;
+  background-color: #D2691E;
   text-align: center;
 }
 
@@ -108,7 +112,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 80px;
-  background-color: #111;
+ 
 }
 
 .container{
