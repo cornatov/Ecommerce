@@ -70,9 +70,9 @@ Rails.application.configure do
   config.action_mailer.perform_caching = false
 
   # Any dynamic links inside emails will generate the right URLs
-  config.action_mailer.default_url_options = { :host => 'https://cornatoron.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'https://bikesanfran.herokuapp.com' }
   # Any assets linked to inside emails will actually render properly
-  config.action_mailer.asset_host = 'https://cornatoron.herokuapp.com'
+  config.action_mailer.asset_host = 'https://bikesanfran.herokuapp.com'
   
 
   # Ignore bad email addresses and do not raise email delivery errors.
@@ -101,7 +101,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.web_socket_server_url = "wss://cornatoron.herokuapp.com/cable"
-config.action_cable.allowed_request_origins = ['https://cornatoron.herokuapp.com', 'http://cornatoron.herokuapp.com']
+  config.web_socket_server_url = "wss://bikesanfran.herokuapp.com/cable"
+config.action_cable.allowed_request_origins = ['https://bikesanfran.herokuapp.com', 'http://bikesanfran.herokuapp.com']
 end
 
