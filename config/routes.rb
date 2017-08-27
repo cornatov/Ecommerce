@@ -1,14 +1,17 @@
 Rails.application.routes.draw do
- 
-  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
-  resources :products
+
+devise_for :users do
+ get "/users/sign_out" => "devise/sessions#destroy", :as => :destroy_user_session
+end
   
-  resources :orders, only: [:index, :show, :create, :destroy]
+  resources :users
+
+  resources :payments, only: [:new, :create]
 
   resources :products do
     resources :comments
   end
-  resources :users
+  
   
   get 'static_pages/about'
 

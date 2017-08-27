@@ -12,7 +12,7 @@ Rails.application.configure do
   # Show full error reports.
   config.consider_all_requests_local = true
   
-  
+
   
 
 
@@ -40,6 +40,7 @@ Rails.application.configure do
 
   # Raise an error on page load if there are pending migrations.
   config.active_record.migration_error = :page_load
+  config.action_mailer.delivery_method = :smtp
 
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
@@ -55,7 +56,7 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
-  config.action_mailer.default_url_options = { host:'localhost:3000' } 
+  config.action_mailer.default_url_options = { host: 'localhost:8080' }
   default_url_options 
   config.app_generators.javascript_engine = :javascript
 end
