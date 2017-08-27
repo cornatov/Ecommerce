@@ -1,16 +1,19 @@
 class UserMailer < ApplicationMailer
-  default from: 'something@something.com'
+  default from: "email@something.com"
 
   def contact_form(email, name, message)
-    @message = message
-    mail(from: email,
-         to: ENV['EMAIL_ADDRESS'],
-         subject: "A new contact form message from #{name}")
+  @message = message
+    mail(:from => email,
+         :to => 'cornatov@buffalo.edu',
+         :subject => "A new contact form message from #{user.first_name}")
   end
 
-  def welcome(user)
-    @appname = 'Bike San Fran'
-    mail(to: user.email,
-         subject: "Welcome to #{@appname}!")
-  end
+def welcome_email(user)
+     @user = user
+       mail(:from => 'cornatov@buffalo.edu',
+         :to => user.email,
+         :subject => "Welcome and thank you #{user.first_name} for joining!")
+ end
+
+
 end
