@@ -1,10 +1,2 @@
 $("#new_comment").html("Thank you for your review!");
 $("#average-rating").attr('data-score', "<%= @product.average_rating %>")
-$(".product-reviews").prepend("<%= j render @comment %>");
-
-var refreshRating = function(){ 
-  $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' }); 
-  $('.rated').raty({ path: '/assets', readOnly: true, score: function() { return 
-  $(this).attr('data-score'); 
-  } 
-});
