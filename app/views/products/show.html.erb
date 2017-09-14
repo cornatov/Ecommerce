@@ -1,7 +1,6 @@
 
 <div class="container-fluid product-container">
-  <div class= "row" data-product-id"></div>
-  <% @product.id %>
+  <div class= "row" data-product-id="<%= @product.id %>">
     <% cache @product do %>
       <h2><%= @product.name %></h2>
       <div class="col-md-12 col-sm-12">
