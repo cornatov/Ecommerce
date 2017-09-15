@@ -14,7 +14,7 @@ devise_for :users, controllers: { registrations: "registrations" }
     resources :comments
   end
   
- 
+ post 'payments/create'
   
   get 'static_pages/about'
 
@@ -23,6 +23,8 @@ devise_for :users, controllers: { registrations: "registrations" }
   get 'static_pages/index'
   
   post 'static_pages/thank_you'
+  
+ 
   
   mount ActionCable.server => '/cable'
   
