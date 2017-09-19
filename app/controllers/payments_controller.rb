@@ -10,7 +10,6 @@ class PaymentsController < ApplicationController
         currency: "usd",
         source: token,
         description: params[:stripeEmail],
-        receipt_email: @user.email
       )
     
     

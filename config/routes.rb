@@ -14,7 +14,7 @@ devise_for :users, controllers: { registrations: "registrations" }
     resources :comments
   end
   
-  get 'payments/create'
+  post 'payments/create'
   
   get 'static_pages/about'
 
