@@ -7,7 +7,8 @@
         <% unless @product.image_url.blank? %>
           <%= image_tag(@product.image_url, width: "350", class: "img-zoom", data: "zoom_image='#{@product.image_url}'") %>
         <% end %>	
-      </div> <!--col-->	
+     
+     
       	
       	
       	
@@ -19,6 +20,7 @@
 <%= hidden_field_tag(:product_id, @product.id) %>
 <%= render partial: "shared/stripe_checkout_button" %>
 <% end %>
+ </div> <!--col-->	
 </div>
 </div>
 
